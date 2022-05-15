@@ -30,20 +30,24 @@ function update() {
     let str = "";
     item.forEach((element, index) => {
         str +=`
-        <tr>
-            <th>${index + 1}</th>
-            <td>${element[0]}</td>
-            <td>${element[1]}</td>
-            <td class="statusTxt" id="statusTxt${index}">${element[2]}</td>
-            <td>
-                <button class="btnDel" id="deleted" onclick=deleted(${index})>Delete</button>
-                <button class="btnStatus" id="status${index}" onclick=alter(${index})>Mark Completed</button>
-            </td>
-        </tr>
+        <div class="row">
+                <div class="sNo">${index + 1}</div>
+                <div class="title">${element[0]}</div>
+                <div class="time">${element[1]}</div>
+                <div class="statusTxt status" id="statusTxt${index}">${element[2]}</div>
+                <div class="actions buttons1">
+                    <div class = "btn2">
+                        <button class="btnDel" id="deleted" onclick=deleted(${index})>Delete</button>
+                    </div>
+                    <div class = "btn2">
+                        <button class="btnStatus" id="status${index}" onclick=alter(${index})>Mark Completed</button>
+                    </div>
+                </div>
+        </div>
         `
     });
-    
     todoTable.innerHTML = str;
+    myFunction();
 }
 
 let add = document.getElementById("add");
@@ -58,17 +62,17 @@ function deleted(itemIndex) {
     update();
     myFunction();
 }
+
 let clearList = document.getElementById("clearList");
 clearList.addEventListener("click", clearListFn)
 function clearListFn() {
-    if(confirm("Are you sure that you are clearing your TODO List?")) {
+    if(confirm("Are you sure that you want to clear your TODO List?")) {
         localStorage.clear();
         update();
     }
 }
 
 function alter(alterIndex) {
-
     let statusBtn = document.getElementById(`status${alterIndex}`);
     let statusTxt = document.getElementById(`statusTxt${alterIndex}`);
     itemStr = localStorage.getItem('itemsJson');
@@ -88,7 +92,7 @@ function alter(alterIndex) {
         item[alterIndex][2] = "Pending"
     }
     localStorage.setItem('itemsJson', JSON.stringify(item));
-    
+    myFunction();
 }
 
 function myFunction() {
@@ -98,11 +102,9 @@ function myFunction() {
         let statusTxt = document.getElementById(`statusTxt${i}`);
         let statusBtn = document.getElementById(`status${i}`);
         if (item[i][2] == "Completed") {
-            statusTxt.style.color = 'green'
-            statusBtn.style.backgroundColor = 'red'
-            statusBtn.textContent = "Mark Pending"
-            statusBtn.style.paddingLeft = "1.6rem";
-            statusBtn.style.paddingRight= "1.6rem";
+            statusTxt.style.color = 'green';
+            statusBtn.style.backgroundColor = 'red';
+            statusBtn.textContent = "Mark Pending";
         }
     }
 }

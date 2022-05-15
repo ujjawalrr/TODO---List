@@ -15,8 +15,24 @@
     flex-direction: column;
     justify-content: center;
   }
+  .buttons1 {
+    /* margin: 1.2rem 0px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .btn1 {
     margin: auto;
+  }
+  .btn2 {
+    margin: auto;
+    width: 100%;
+  }
+  .status {
+    width: 15%;
+    padding: 0.8rem;
+    text-align: center;
+    /* display: none; */
   }
 }
 @media screen and (min-width: 893px) {
@@ -35,6 +51,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+  .buttons1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .btn2 {
+    width: 35%;
+  }
+  .status {
+    width: 15%;
+    padding: 0.8rem;
+    text-align: center;
   }
 }
 * {
@@ -81,7 +110,7 @@ input {
 }
 .btn {
   padding: 0.6rem 2rem;
-  background: #f1bf5a;
+  background: rgb(70, 129, 152);
   color: white;
   border-radius: 0.6rem;
   cursor: pointer;
@@ -90,7 +119,7 @@ input {
   font-weight: 700;
 }
 .btn:hover {
-  background: #fbab0a;
+  background: rgb(39, 109, 137);
 }
 #clearList {
   padding: 0.6rem 2.2rem;
@@ -133,4 +162,36 @@ td {
 }
 #tableContainer {
   margin-top: 1.2rem;
+}
+
+.cont {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+.sNo {
+  width: 5%;
+  padding: 0.8rem;
+  text-align: center;
+}
+.title {
+  width: 30%;
+  padding: 0.8rem;
+  text-align: center;
+}
+.time {
+  width: 20%;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.actions {
+  width: 30%;
+  padding: 0.8rem;
+  text-align: center;
 }
