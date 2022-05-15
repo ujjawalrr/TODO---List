@@ -16,7 +16,6 @@
     justify-content: center;
   }
   .buttons1 {
-    /* margin: 1.2rem 0px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,7 +125,7 @@ input {
 }
 .btnDel {
   padding: 0.5rem 1.2rem;
-  background: #f1bf5a;
+  background: rgb(12, 12, 232);
   color: white;
   border-radius: 0.6rem;
   cursor: pointer;
@@ -135,7 +134,7 @@ input {
   font-weight: 700;
 }
 .btnDel:hover {
-    background: #fbab0a;
+    background: rgb(0, 0, 146);
 }
 .btnStatus {
     padding: 0.5rem 1.2rem;
