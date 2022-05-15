@@ -10,10 +10,13 @@
     width: 100%;
   }
   .buttons {
-    margin: 0.8rem 0px;
+    margin: 1.2rem 0px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .btn1 {
+    margin: auto;
   }
 }
 @media screen and (min-width: 893px) {
@@ -28,7 +31,7 @@
     width: 80%;
   }
   .buttons {
-    margin: 0.8rem 0px;
+    margin: 1.2rem 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -38,10 +41,18 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+body {
+  background: #cc2b5e;
+  background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);
+  background: linear-gradient(90deg, #753a88, #cc2b5e);
+}
+#tableContainer {
+  background-color: white;
+}
 h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
 }
 h3 {
@@ -57,7 +68,7 @@ h3 {
 }
 
 input {
-  padding: 0.6rem;
+  padding: 0.4rem;
   border: 0.1rem solid black;
   border-radius: 0.4rem;
   font-size: 1.2rem;
@@ -69,7 +80,7 @@ input {
     margin-left: 0.6rem;
 }
 .btn {
-  padding: 0.8rem 2.2rem;
+  padding: 0.6rem 2rem;
   background: #f1bf5a;
   color: white;
   border-radius: 0.6rem;
@@ -80,6 +91,9 @@ input {
 }
 .btn:hover {
   background: #fbab0a;
+}
+#clearList {
+  padding: 0.6rem 2.2rem;
 }
 .btnDel {
   padding: 0.5rem 1.2rem;
@@ -116,4 +130,7 @@ td {
 }
 .statusTxt {
     color: red;
+}
+#tableContainer {
+  margin-top: 1.2rem;
 }

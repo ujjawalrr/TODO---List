@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://th.bing.com/th/id/OIP.TA5FbDH2vmeQxem5Z4ppHQHaHa?pid=ImgDet&rs=1">
-    <link rel="shortcut icon" href="https://th.bing.com/th/id/OIP.TA5FbDH2vmeQxem5Z4ppHQHaHa?pid=ImgDet&rs=1" type="image/x-icon">
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/OIP.TA5FbDH2vmeQxem5Z4ppHQHaHa?pid=ImgDet&rs=1"
+        type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>To Do List</title>
 </head>
+
 <body onload="myFunction()">
     <h1>To Do List</h1>
     <div class="container">
@@ -22,17 +26,16 @@
             <input type="time" name="time" id="time1"><span>-</span>
             <input type="time" name="time" id="time2">
             <div class="buttons">
-                <div>
+                <div class="btn1">
                     <button class="btn" id="add">Add to list</button>
                 </div>
-                <div>
+                <div class="btn1">
                     <button class="btn" id="clearList">Clear List</button>
                 </div>
             </div>
         </div>
-        
     </div>
-    <div class="container">
+    <div class="container" id="tableContainer">
         <table>
             <thead class="head">
                 <tr>
@@ -50,4 +53,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

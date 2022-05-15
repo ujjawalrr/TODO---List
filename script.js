@@ -14,6 +14,7 @@ function addAndUpdate() {
         localStorage.setItem('itemsJson', JSON.stringify(item));
     }
     update();
+    myFunction();
 }
 
 function update() {
@@ -55,6 +56,7 @@ function deleted(itemIndex) {
     item.splice(itemIndex,1);
     localStorage.setItem('itemsJson', JSON.stringify(item));
     update();
+    myFunction();
 }
 let clearList = document.getElementById("clearList");
 clearList.addEventListener("click", clearListFn)
@@ -99,6 +101,8 @@ function myFunction() {
             statusTxt.style.color = 'green'
             statusBtn.style.backgroundColor = 'red'
             statusBtn.textContent = "Mark Pending"
+            statusBtn.style.paddingLeft = "1.6rem";
+            statusBtn.style.paddingRight= "1.6rem";
         }
     }
 }
