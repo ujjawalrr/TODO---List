@@ -1,0 +1,119 @@
+@media screen and (max-width: 893px) {
+  html {
+    font-size: 16px;
+  }
+  .box {
+    margin: auto;
+    width: 80%;
+  }
+  #title {
+    width: 100%;
+  }
+  .buttons {
+    margin: 0.8rem 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 893px) {
+  html {
+    font-size: 20px;
+  }
+  .box {
+    margin: auto;
+    width: 50%;
+  }
+  #title {
+    width: 80%;
+  }
+  .buttons {
+    margin: 0.8rem 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+}
+
+input {
+  padding: 0.6rem;
+  border: 0.1rem solid black;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+}
+#time1 {
+    margin-right: 0.6rem;
+}
+#time2 {
+    margin-left: 0.6rem;
+}
+.btn {
+  padding: 0.8rem 2.2rem;
+  background: #f1bf5a;
+  color: white;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-family: "Montserrat", serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.btn:hover {
+  background: #fbab0a;
+}
+.btnDel {
+  padding: 0.5rem 1.2rem;
+  background: #f1bf5a;
+  color: white;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-family: "Montserrat", serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.btnDel:hover {
+    background: #fbab0a;
+}
+.btnStatus {
+    padding: 0.5rem 1.2rem;
+    background: green;
+    color: white;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-family: "Montserrat", serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.head {
+  background-color: gray;
+}
+th {
+  padding: 0.8rem;
+}
+td {
+    text-align: center;
+}
+.statusTxt {
+    color: red;
+}
