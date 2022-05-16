@@ -34,7 +34,7 @@ function update() {
                 <div class="sNo">${index + 1}</div>
                 <div class="title">
                     <div class="tit">${element[0]}</div>
-                    <div class="stat statusTxt"  id="statusTxt${index}">${element[2]}</div>
+                    <div class="stat statusTxt"  id="statTxt${index}">${element[2]}</div>
                 </div>
                 <div class="time">${element[1]}</div>
                 <div class="statusTxt status" id="statusTxt${index}">${element[2]}</div>
@@ -78,11 +78,14 @@ function clearListFn() {
 function alter(alterIndex) {
     let statusBtn = document.getElementById(`status${alterIndex}`);
     let statusTxt = document.getElementById(`statusTxt${alterIndex}`);
+    let statTxt = document.getElementById(`statTxt${alterIndex}`);
     itemStr = localStorage.getItem('itemsJson');
     item = JSON.parse(itemStr);
     if (item[alterIndex][2] == "Pending") {
         statusTxt.textContent = "Completed"
         statusTxt.style.color = 'green'
+        statTxt.textContent = "Completed"
+        statTxt.style.color = 'green'
         statusBtn.textContent = "Mark Pending"
         statusBtn.style.backgroundColor = 'red'
         item[alterIndex][2] = "Completed"
@@ -90,6 +93,8 @@ function alter(alterIndex) {
     else {
         statusTxt.textContent = "Pending"
         statusTxt.style.color = 'red'
+        statTxt.textContent = "Pending"
+        statTxt.style.color = 'red'
         statusBtn.textContent = "Mark Completed"
         statusBtn.style.backgroundColor = 'green'
         item[alterIndex][2] = "Pending"
@@ -104,8 +109,10 @@ function myFunction() {
     for (let i = 0; i<item.length ; i++) {
         let statusTxt = document.getElementById(`statusTxt${i}`);
         let statusBtn = document.getElementById(`status${i}`);
+        let statTxt = document.getElementById(`statTxt${i}`);
         if (item[i][2] == "Completed") {
             statusTxt.style.color = 'green';
+            statTxt.style.color = 'green';
             statusBtn.style.backgroundColor = 'red';
             statusBtn.textContent = "Mark Pending";
         }
