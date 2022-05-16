@@ -44,6 +44,7 @@
     text-align: center;
     word-wrap: break-word;
   }
+
   .time {
     width: 20%;
     padding: 0.8rem;
@@ -175,12 +176,12 @@ input {
   border-radius: 0.4rem;
   font-size: 1.2rem;
 }
-#time1 {
+/* #time1 {
     margin-right: 0.6rem;
 }
 #time2 {
     margin-left: 0.6rem;
-}
+} */
 .btn {
   padding: 0.6rem 2rem;
   background: rgb(70, 129, 152);
