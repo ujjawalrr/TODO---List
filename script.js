@@ -32,7 +32,10 @@ function update() {
         str +=`
         <div class="row">
                 <div class="sNo">${index + 1}</div>
-                <div class="title">${element[0]}</div>
+                <div class="title">
+                    <div class="tit">${element[0]}</div>
+                    <div class="stat statusTxt"  id="statusTxt${index}">${element[2]}</div>
+                </div>
                 <div class="time">${element[1]}</div>
                 <div class="statusTxt status" id="statusTxt${index}">${element[2]}</div>
                 <div class="actions buttons1">

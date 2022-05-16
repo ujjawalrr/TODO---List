@@ -31,7 +31,29 @@
     width: 15%;
     padding: 0.8rem;
     text-align: center;
-    /* display: none; */
+    display: none;
+  }
+  .sNo {
+    width: 5%;
+    padding: 0.8rem;
+    text-align: center;
+  }
+  .title {
+    width: 35%;
+    padding: 0.8rem;
+    text-align: center;
+    word-wrap: break-word;
+  }
+  .time {
+    width: 20%;
+    padding: 0.8rem;
+    text-align: center;
+  }
+  
+  .actions {
+    width: 40%;
+    padding: 0.8rem;
+    text-align: center;
   }
 }
 @media screen and (min-width: 893px) {
@@ -63,6 +85,31 @@
     width: 15%;
     padding: 0.8rem;
     text-align: center;
+  }
+  .sNo {
+    width: 5%;
+    padding: 0.8rem;
+    text-align: center;
+  }
+  .title {
+    width: 30%;
+    padding: 0.8rem;
+    text-align: center;
+    word-wrap: break-word;
+  }
+  .time {
+    width: 20%;
+    padding: 0.8rem;
+    text-align: center;
+  }
+  
+  .actions {
+    width: 30%;
+    padding: 0.8rem;
+    text-align: center;
+  }
+  .stat {
+    display: none;
   }
 }
 * {
@@ -149,6 +196,7 @@ input {
 
 .head {
   background-color: gray;
+  font-weight: 600;
 }
 th {
   padding: 0.8rem;
@@ -172,25 +220,4 @@ td {
 .row {
   display: flex;
   justify-content: space-around;
-}
-.sNo {
-  width: 5%;
-  padding: 0.8rem;
-  text-align: center;
-}
-.title {
-  width: 30%;
-  padding: 0.8rem;
-  text-align: center;
-}
-.time {
-  width: 20%;
-  padding: 0.8rem;
-  text-align: center;
-}
-
-.actions {
-  width: 30%;
-  padding: 0.8rem;
-  text-align: center;
 }
