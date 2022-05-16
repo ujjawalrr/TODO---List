@@ -107,7 +107,7 @@
     text-align: center;
   }
   .title {
-    width: 30%;
+    width: 25%;
     padding: 0.8rem;
     text-align: center;
     word-wrap: break-word;
@@ -119,7 +119,7 @@
   }
   
   .actions {
-    width: 30%;
+    width: 35%;
     padding: 0.8rem;
     text-align: center;
   }
