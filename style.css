@@ -55,6 +55,20 @@
     padding: 0.8rem;
     text-align: center;
   }
+  .btnDel {
+    margin-bottom: 0.4rem;
+    padding: 0.5rem 1.2rem;
+    background: rgb(12, 12, 232);
+    color: white;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-family: "Montserrat", serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .btnDel:hover {
+      background: rgb(0, 0, 146);
+  }
 }
 @media screen and (min-width: 893px) {
   html {
@@ -110,6 +124,19 @@
   }
   .stat {
     display: none;
+  }
+  .btnDel {
+    padding: 0.5rem 1.2rem;
+    background: rgb(12, 12, 232);
+    color: white;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-family: "Montserrat", serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .btnDel:hover {
+      background: rgb(0, 0, 146);
   }
 }
 * {
@@ -170,19 +197,7 @@ input {
 #clearList {
   padding: 0.6rem 2.2rem;
 }
-.btnDel {
-  padding: 0.5rem 1.2rem;
-  background: rgb(12, 12, 232);
-  color: white;
-  border-radius: 0.6rem;
-  cursor: pointer;
-  font-family: "Montserrat", serif;
-  font-size: 0.8rem;
-  font-weight: 700;
-}
-.btnDel:hover {
-    background: rgb(0, 0, 146);
-}
+
 .btnStatus {
     padding: 0.5rem 1.2rem;
     background: green;
