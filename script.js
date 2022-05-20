@@ -86,6 +86,8 @@ function alter(alterIndex) {
         statusTxt.style.color = 'green'
         statTxt.textContent = "Completed"
         statTxt.style.color = 'green'
+        statusBtn.style.paddingLeft = '1.2rem'
+        statusBtn.style.paddingRight = '1.2rem'
         statusBtn.textContent = "Mark Pending"
         statusBtn.style.backgroundColor = 'red'
         item[alterIndex][2] = "Completed"
@@ -96,6 +98,8 @@ function alter(alterIndex) {
         statTxt.textContent = "Pending"
         statTxt.style.color = 'red'
         statusBtn.textContent = "Mark Completed"
+        statusBtn.style.paddingLeft = '0.6rem'
+        statusBtn.style.paddingRight = '0.6rem'
         statusBtn.style.backgroundColor = 'green'
         item[alterIndex][2] = "Pending"
     }
@@ -115,6 +119,8 @@ function myFunction() {
             statTxt.style.color = 'green';
             statusBtn.style.backgroundColor = 'red';
             statusBtn.textContent = "Mark Pending";
+            statusBtn.style.paddingLeft = '1.2rem'
+            statusBtn.style.paddingRight = '1.2rem'
         }
     }
 }
