@@ -35,7 +35,7 @@
   }
   .sNo {
     width: 5%;
-    padding: 0.8rem;
+    padding: 0.8rem 0rem 0.8rem 0.2rem;
     text-align: center;
   }
   .title {
@@ -149,9 +149,6 @@ body {
   background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);
   background: linear-gradient(90deg, #753a88, #cc2b5e);
 }
-#tableContainer {
-  background-color: white;
-}
 h1 {
   font-family: "Merriweather", sans-serif;
   font-size: 2.5rem;
@@ -163,25 +160,23 @@ h3 {
   font-size: 1.5rem;
   font-weight: 700;
 }
-
 .container {
   display: flex;
   flex-direction: column;
   padding: auto;
 }
-
+#tableContainer {
+  background-color: white;
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
 input {
   padding: 0.4rem;
   border: 0.1rem solid black;
   border-radius: 0.4rem;
   font-size: 1.2rem;
 }
-/* #time1 {
-    margin-right: 0.6rem;
-}
-#time2 {
-    margin-left: 0.6rem;
-} */
 .btn {
   padding: 0.6rem 2rem;
   background: rgb(70, 129, 152);
@@ -222,16 +217,6 @@ td {
 }
 .statusTxt {
     color: red;
-}
-#tableContainer {
-  margin-top: 1.2rem;
-}
-
-.cont {
-  background-color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  padding: 0.6rem;
 }
 .row {
   display: flex;
